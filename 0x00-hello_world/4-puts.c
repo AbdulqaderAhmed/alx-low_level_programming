@@ -1,4 +1,9 @@
 #include <stdio.h>
+/*
+ * main - prints text using puts()
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
