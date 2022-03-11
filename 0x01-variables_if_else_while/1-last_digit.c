@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
  * main - main block
  * Description: Get a random number and check its last digit, compare it with 5
@@ -7,14 +8,21 @@
  */
 int main(void)
 {
-	char c = 'a';
+	int n;
 
-	while (c <= 'z')
+	srand(time());
+	n = rand() - RAND_MAX / 2;
+	int last = n % 10;
+
+	if (last > 5)
 	{
-		putchar(c);
-		c++;
+		printf("Last digit of %d is %d and is greater than 5\n", n, last);
+	} else if (last < 6 && last != 0)
+	{
+		printf("Last digit of %d is %d and is less than 5 and not 0\n", n, last);
+	} else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, last);
 	}
-
-	putchar('\n');
 	return (0);
 }
