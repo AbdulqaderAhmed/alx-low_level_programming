@@ -12,12 +12,11 @@ int main(void)
 
 	alpha = 'a';
 
-	while (alpha <= 'z')
+	for (alpha; alpha <= 'z'; alpha++)
 	{
 		if (alpha != 'e' && alpha != 'q')
 		{
 			putchar(alpha);
-			alpha++;
 		}
 	}
 
