@@ -12,8 +12,10 @@ int main(void)
 
 	for (c = 0; c < 8; c++)
 	{
-		_putchar(a[c]);
+		char b = a[c];
 	}
+	_putchar(b);
 	_putchar('\n');
+	
 	return (0);
 }
