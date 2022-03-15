@@ -1,11 +1,11 @@
 #include "main.h"
-/*
+/**
  * main - entry block
  *
  * Return: 0
  */
- int main(void)
- {
+int main(void)
+{
 	char str[] = "_putchar";
 	int c;
 
@@ -15,4 +15,4 @@
 	}
 	_putchar('\n');
 	return (0);
- }
+}
