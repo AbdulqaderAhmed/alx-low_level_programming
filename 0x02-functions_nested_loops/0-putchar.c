@@ -6,13 +6,15 @@
  **/
 int main(void)
 {
-	char a[] = "_putchar";
+	char h[] = "_putchar";
+	int m;
 
-	int c;
+	m = 0;
 
-	for (c = 0; c < 8; c++)
+	while (m <= 7)
 	{
-		_putchar(a[c]);
+		_putchar(h[m]);
+		m++;
 	}
 	_putchar('\n');
 	return (0);
