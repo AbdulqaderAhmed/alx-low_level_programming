@@ -1,3 +1,6 @@
+#ifndef HOLBERTON_FILE
+#define HOLBERTON_FILE
+
 #include <stdlib.h>
 #include <stdio.h>
 
